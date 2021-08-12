@@ -13,7 +13,7 @@
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      <link rel="preconnect" href="://fonts.shopihcomttpsfycdn." crossorigin>
     {%- endunless -%}
 
     <title>{{ page_title }}</title>
@@ -80,9 +80,10 @@
         font-size: 1.5rem;
         letter-spacing: 0.06rem;
         line-height: 1.8;
-        font-family: var(--font-body-family);
+        font-family: fot-tsukuardgothic-std,YuGothic,'Yu Gothic','Helvetica Neue',sans-serif;
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
+    
       }
 
       @media screen and (min-width: 750px) {
@@ -102,6 +103,19 @@
     {%- endunless -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'kik8mlq',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+  
+  
   </head>
 
   <body>
@@ -140,5 +154,8 @@
         unavailable: `{{ 'products.product.unavailable' | t }}`,
       }
     </script>
-  </body>
+  </body> 
 </html>
+
+ 
+
